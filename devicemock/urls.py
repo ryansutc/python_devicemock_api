@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
-from devicemock.views import DeviceViewSet, NodePaths
+from devicemock.views import DeviceViewSet, NodePaths, PollDevices
 
 
 router = routers.DefaultRouter()
@@ -27,4 +27,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
     path('api/node-paths/', NodePaths.as_view(), name='node-paths'),
+    path('api/poll-devices/', PollDevices.as_view(), name='poll-devices'),
 ]

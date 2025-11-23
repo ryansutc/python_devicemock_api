@@ -42,3 +42,20 @@ class NodePaths(APIView):
             })
         
         return Response({'nodes': result})
+    
+    
+class PollDevices(APIView):
+    """
+    POST endpoint that accepts a list of paths and returns all devices matching those paths
+    """
+    def post(self, request):
+        paths = request.data.get('paths', [])
+        
+        if not paths:
+            return Response({'devices': []})
+        
+        # Query devices where path matches any of the provided paths
+        devices = Device.objects.filter(path__in=paths).order_by('id')
+        serializer = DeviceSerializer(devices, many=True, context={'request': request})
+        
+        return Response({'devices': serializer.data})
