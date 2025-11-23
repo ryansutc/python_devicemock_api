@@ -72,7 +72,7 @@
   },
   {
     "model": "devicemock.device",
-    "pk": 6,
+    "pk": 7,
     "fields": {
       "name": "Battery Sensor 2",
       "on": true,
@@ -80,6 +80,42 @@
       "device_type": "battery_sensor",
       "path": "/network/subnet2/",
       "value": 80
+    }
+  },
+  {
+    "model": "devicemock.device",
+    "pk": 8,
+    "fields": {
+      "name": "Light Sensor 1",
+      "on": false,
+      "value_update_interval": 15,
+      "device_type": "light_sensor",
+      "path": "/network/subnet2/closet/",
+      "value": 10
+    }
+  },
+  {
+    "model": "devicemock.device",
+    "pk": 9,
+    "fields": {
+      "name": "Light Sensor 2",
+      "on": true,
+      "value_update_interval": 15,
+      "device_type": "light_sensor",
+      "path": "/network/subnet2/closet/",
+      "value": 0
+    }
+  },
+  {
+    "model": "devicemock.device",
+    "pk": 10,
+    "fields": {
+      "name": "Light Sensor 3",
+      "on": true,
+      "value_update_interval": 5,
+      "device_type": "light_sensor",
+      "path": "/network/subnet2/closet/",
+      "value": 15
     }
   }
 ]
