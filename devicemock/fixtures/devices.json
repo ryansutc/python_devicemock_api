@@ -1,0 +1,85 @@
+[
+  {
+    "model": "devicemock.device",
+    "pk": 1,
+    "fields": {
+      "name": "Temperature Sensor 1",
+      "on": true,
+      "value_update_interval": 10,
+      "device_type": "temperature_sensor",
+      "path": "/network/subnet1/",
+      "value": 22.5
+    }
+  },
+  {
+    "model": "devicemock.device",
+    "pk": 2,
+    "fields": {
+      "name": "Humidity Sensor 1",
+      "on": false,
+      "value_update_interval": 15,
+      "device_type": "humidity_sensor",
+      "path": "/network/subnet1/"
+    }
+  },
+  {
+    "model": "devicemock.device",
+    "pk": 3,
+    "fields": {
+      "name": "Pressure Sensor 1",
+      "on": true,
+      "value_update_interval": 15,
+      "device_type": "pressure_sensor",
+      "path": "/network/subnet1/",
+      "value": 10
+    }
+  },
+  {
+    "model": "devicemock.device",
+    "pk": 4,
+    "fields": {
+      "name": "Temperature Sensor 2",
+      "on": true,
+      "value_update_interval": 10,
+      "device_type": "temperature_sensor",
+      "path": "/network/subnet2/",
+      "value": 22.5
+    }
+  },
+  {
+    "model": "devicemock.device",
+    "pk": 5,
+    "fields": {
+      "name": "Humidity Sensor 2",
+      "on": false,
+      "value_update_interval": 15,
+      "device_type": "humidity_sensor",
+      "path": "/network/subnet2/",
+      "value": 55.0
+    }
+  },
+  {
+    "model": "devicemock.device",
+    "pk": 6,
+    "fields": {
+      "name": "Pressure Sensor 2",
+      "on": true,
+      "value_update_interval": 15,
+      "device_type": "pressure_sensor",
+      "path": "/network/subnet2/",
+      "value": 1013.25
+    }
+  },
+  {
+    "model": "devicemock.device",
+    "pk": 6,
+    "fields": {
+      "name": "Battery Sensor 2",
+      "on": true,
+      "value_update_interval": 5,
+      "device_type": "battery_sensor",
+      "path": "/network/subnet2/",
+      "value": 80
+    }
+  }
+]
